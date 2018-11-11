@@ -49,6 +49,7 @@ def self.create
     song.name = name 
     song.artist_name = artist
     song
+    binding.pry
   end
   
   def self.create_from_filename(song)
@@ -59,7 +60,6 @@ def self.create
   
   def self.destroy_all 
     @@all = []
-    binding.pry
   end 
 end
 
