@@ -59,6 +59,7 @@ def self.create
   
   def self.destroy_all 
     @@all = []
+    binding.pry
   end 
 end
 
